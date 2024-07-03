@@ -1,0 +1,137 @@
+{
+    // ===> VS code 
+    "workbench.colorTheme": "Tokyo Night",
+    "editor.fontFamily": "cascadia code",
+    "workbench.iconTheme": "vscode-icons",    
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "files.autoSave": "afterDelay",
+    "workbench.sideBar.location": "right",
+    "window.zoomLevel": 1,
+    "editor.fontSize": 12,
+    "workbench.editor.showTabs": "none",
+    "window.title": "${activeEditorShort}",
+    "editor.fontLigatures": false,
+    "editor.tabSize": 4,
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+    "update.showReleaseNotes": false,
+    
+    // ===> Terminal
+    "terminal.integrated.fontFamily": "Hack NF",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+    // ===> Vim
+    "vim.hlsearch": true, 
+    "editor.lineNumbers": "relative",
+    "vim.useSystemClipboard": true,
+    // "editor.cursorStyle": "block",
+    "vim.leader": "<space>",
+    "vim.insertModeKeyBindings": [
+        {
+            // Pressing j twice ("before": ["j", "j"]) simulates the Esc key ("after": ["<Esc>"]).
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive" : [
+        {
+            // Pressing the leader key (Spacebar) followed by r and then f renames the current file.
+            "before": ["<leader>", "r", "f"],
+            "commands": ["fileutils.renameFile"]
+        },
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["J"],
+            "commands": ["editor.action.moveLinesDownAction"],
+            "when": ["editorTextFocus && !editorReadonly"]
+        },
+        {
+            "before": ["K"],
+            "commands": ["editor.action.moveLinesUpAction"],
+            "when": ["editorTextFocus && !editorReadonly"]
+        },
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<leader>", "e"],
+            "commands": ["workbench.action.toggleSidebarVisibility"]
+        },
+        {
+            "before": ["leader", "t"],
+            "commands": ["workbench.action.terminal.toggleTerminal"]
+        },
+        {
+            "before": ["[", "d"],
+            "commands": ["editor.action.mark.prev"]
+        },
+        {
+            "before": ["[", "d"],
+            "commands": ["editor.action.mark.next"]
+        },
+        {
+            "before": ["leader", "d"],
+            "commands": ["workbench.action.showErrorsWarnings"]
+        },
+        {
+            "before": ["leader", "f"],
+            "commands": ["workbench.action.showCommands"]
+        },
+        {
+            "before": ["leader", "e"],
+            "commands": ["workbench.action.toggleSidebarVisibility"]
+        },
+        {
+            "before": ["leader", "t"],
+            "commands": ["workbench.action.terminal.toggleTerminal"]
+        },
+        {
+            "before": ["[", "d"],
+            "commands": ["editor.action.mark.prev"]
+        },
+        {
+            "before": ["]", "d"],
+            "commands": ["editor.action.mark.next"]
+        },
+        {
+            "before": ["leader", "d"],
+            "commands": ["workbench.action.showErrorsWarnings"]
+        },
+        {
+            "before": ["<leader>", "w"],
+            "commands": ["workbench.action.splitEditor"]
+        },
+        {
+            "before": ["<leader>", "h", "a"],
+            "commands": ["vscode-harpoon.addEditor"]
+        },
+        {
+            "before": ["<leader>", "h", "e"],
+            "commands": ["vscode-harpoon.editEditors"]
+        },
+        {
+            "before": ["<leader>", "h", "f"],
+            "commands": ["vscode-harpoon.editorQuickPick"]
+        },
+        {
+            "before": ["<leader>", "1"],
+            "commands": ["vscode-harpoon.gotoEditor1"]
+        },
+        {
+            "before": ["<leader>", "2"],
+            "commands": ["vscode-harpoon.gotoEditor2"]
+        },
+        {
+            "before": ["<leader>", "3"],
+            "commands": ["vscode-harpoon.gotoEditor3"]
+        }
+    ],
+
+    // ===> Programming languages
+    "php.validate.executablePath": "C:/php/php.exe",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+}
