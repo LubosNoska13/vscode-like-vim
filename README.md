@@ -50,3 +50,13 @@ git clone https://github.com/LubosNoska13/vscode-like-vim.git
     - **Linux**: ~/.config/Code/User/
 
 6. Restart VSCode: To apply the new settings and keybindings, restart your VSCode
+
+## Contributing
+Contributions are welcome! If you have suggestions for improvements or new features, feel free to open an issue or submit a pull request.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+By following these steps and using the provided configuration files, you can significantly enhance your productivity with a streamlined and efficient coding environment in VSCode. Happy coding!
